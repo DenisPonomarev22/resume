@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Мой сайт">
-    <meta name="keywords" content="my page">
-    <title>Document</title>
-</head>
-<body>
-    <h1><strong>Денис Пономарёв</strong></h1>
-    <article>
-        <p>Я студент <i>2 курса</i> колледжа связи. Очень надеюсь,
-         что к концу <em> 3 курса</em> смогу сам написать свой сайт
-         с использованием JS и React</p>
-    </article>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Мой сайт">
+        <meta name="keywords" content="my page">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css/01-selector.css">
+    </head>
 
-    <hr>
+    <body>
+        <header class="header" id="heder">
+            <h1 class="h1-head-header font-for-header">Пономарёв Денис Николаевич</h1>
+            <h2 class="h2-head-header font-for-header" id="header-gruppa-ip213">Группа ИП213</h2>
+            <article class="header-article">
+                <p class="header-text" id="p-about-me">Я студент 2 курса колледжа связи им.Петрова
+                    города Ставрополя. Из всех отраслей я выбрал Web-разработку потому,
+                    что в ней необходимо прикладывать и творческую составляющую,
+                    так и свои технические знания.
+                </p>
+            </article>
+        </header>
 
-    <div class="hobbi">
-    <h1>Мои хобби</h1>
-    <ul>
-        <li>Кактусы и суккуленты</li>
-        <li>Книги</li>
-        <li>Волейбол</li>
-        <li>Футбол</li>
-    </ul>
-    </div>
+        <hr class="standart-hr">
 
-    <hr>
+        <div class="hobbi">
+            <h1 id="head-hobbi" class="font-for-head">Мои хобби</h1>
+            <ul id="list-hobbi" class="list-hobbi">
+                <li>Кактусы и суккуленты</li>
+                <li>Книги</li>
+                <li>Волейбол</li>
+                <li>Футбол</li>
+            </ul>
+        </div>
 
-    <div class="my_work">
-        <h1>Места учёбы</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Место</th>
-                    <th>Должность</th>
-                    <th>Время</th>
-                </tr>
-            </thead>
-            <tbody>
+        <hr class="standart-hr">
 
-                <tr>
-                    <td>Школа 28</td>
-                    <td>Ученик</td>
-                    <td>2012-2021гг.</td>
-                </tr>
-                
-                <tr>
-                    <td>СКС</td>
-                    <td>Студент</td>
-                    <td>2021 - н.в.</td>
-                </tr>
-            </tbody>
+        <div class="my-work">
+            <h1 id="head-my-work " class="font-for-head">Места учёбы</h1>
+            <table id="table-my-work" class="table-my-work">
+                <thead class="table-my-work">
+                    <tr>
+                        <th>Место</th>
+                        <th>Должность</th>
+                        <th>Время</th>
+                    </tr>
+                </thead>
+                <tbody class="table-my-work">
+
+                    <tr>
+                        <td>Школа 28</td>
+                        <td>Ученик</td>
+                        <td>2012-2021гг.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>СКС</td>
+                        <td>Студент</td>
+                        <td>2021 - н.в.</td>
+                    </tr>
+                </tbody>
+            <br>
+            </table>
+        </div>
+
+        <hr class="standart-hr">
+        
+        
         <br>
-        </table>
-    </div>
 
-    <hr>
-    
-    
-    <br>
+        <div class="connect-fo-me">
+            <form>
+                <div id="connect-fo-me-input-name" class="connect-fo-me-input-name">
+                    <label for="name">Ваше имя: </label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div id="connect-fo-me-input-email" class="connect-fo-me-input-email">
+                    <label for="email">Ваше email: </label>
+                    <input type="text" id="email" placeholder="Введите email">
+                </div>
 
-    <div class="connect_fo_me">
-        <form>
-            <div>
-                <label for="name">Ваше имя: </label>
-                <input type="text" id="name" placeholder="Введите имя">
-            </div>
-            <div>
-                <label for="email">Ваше email: </label>
-                <input type="text" id="email" placeholder="Введите email">
-            </div>
+                <div id="connect-fo-me-message" class="connect-fo-me-message">
+                    <label for="message">Ваше сообщение: </label>
+                    <br>
+                    <textarea type="text" class="message" id="message" placeholder="Введите сообщение"></textarea>
+                </div>
 
-            <div>
-                <label for="message">Ваше сообщение: </label>
-                <br>
-                <textarea type="text" id="message" placeholder="Введите сообщение"></textarea>
-            </div>
+                <button class="bottom-submit" id="connect-fo-me-botton-submit" type="submit">Отправить!</button>
 
-            <button type="submit">Отправить!</button>
+            </form>
+        </div>
 
-        </form>
-    </div>
+        <hr class="footer-hr">
 
-    <hr>
-
-    <footer class="my_pages" align="center">
-    <a href="https://google.com" target="_blank">Google |</a>
-    <a href="https://vk.com/vprch" target="_blank">ВК |</a>
-    </footer>
-</body>
+        <footer id="contact-pages" class="my-pages" align="center">
+        <a href="https://google.com" target="_blank">Google |</a>
+        <a href="https://vk.com/vprch" target="_blank">ВК |</a>
+        </footer>
+    </body>
 </html>
