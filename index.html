@@ -1,102 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Мой сайт">
-        <meta name="keywords" content="my page">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css/01-selector.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/s-page.css" >
+    <!--  
+    <link rel="stylesheet" href="style.css/02-style-font.css">
+    <link rel="stylesheet" href="style.css/03-style-color.css">
+    <link rel="stylesheet" href="style.css/04-border.css">
+    -->
+    <link rel="stylesheet" href="style.css/06-links.css">
+    <link rel="stylesheet" href="style.css/07-list-table.css">
+    <link rel="stylesheet" href="style.css/08-display.css">
+    <link rel="stylesheet" href="style.css/09-position.css">
 
-    <body>
-        <header class="header" id="heder">
-            <h1 class="h1-head-header font-for-header">Пономарёв Денис Николаевич</h1>
-            <h2 class="h2-head-header font-for-header" id="header-gruppa-ip213">Группа ИП213</h2>
-            <article class="header-article">
-                <p class="header-text" id="p-about-me">Я студент 2 курса колледжа связи им.Петрова
-                    города Ставрополя. Из всех отраслей я выбрал Web-разработку потому,
-                    что в ней необходимо прикладывать и творческую составляющую,
-                    так и свои технические знания.
-                </p>
-            </article>
-        </header>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
 
-        <hr class="standart-hr">
-
-        <div class="hobbi">
-            <h1 id="head-hobbi" class="font-for-head">Мои хобби</h1>
-            <ul id="list-hobbi" class="list-hobbi">
-                <li>Кактусы и суккуленты</li>
-                <li>Книги</li>
-                <li>Волейбол</li>
-                <li>Футбол</li>
-            </ul>
+<body>
+    <header id="header" class="header">
+        <div class="img">
+            <img  class= "header-img"src="img/ava.jpg" alt="">
         </div>
 
-        <hr class="standart-hr">
+        <h2 id="main-header" class="main-header">Font</h2>
+        <p id="par_header" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tempore corporis, odit minus voluptates consequuntur neque.
+            Quidem fugiat molestias perspiciatis fugit consequatur 
+            obcaecati et, qui suscipit deserunt sequi illum. Id, magni?</p>
+    </header> 
 
-        <div class="my-work">
-            <h1 id="head-my-work " class="font-for-head">Места учёбы</h1>
-            <table id="table-my-work" class="table-my-work">
-                <thead class="table-my-work">
-                    <tr>
-                        <th>Место</th>
-                        <th>Должность</th>
-                        <th>Время</th>
-                    </tr>
-                </thead>
-                <tbody class="table-my-work">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+        </ul>
+    </nav>
+    
+    <div class="card">
+        <h2>List & Table</h2>
 
-                    <tr>
-                        <td>Школа 28</td>
-                        <td>Ученик</td>
-                        <td>2012-2021гг.</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>СКС</td>
-                        <td>Студент</td>
-                        <td>2021 - н.в.</td>
-                    </tr>
-                </tbody>
-            <br>
-            </table>
+        <ul class="list">
+            <li class="li">Lorem, ipsum dolor.</li>
+            <li class="li">Lorem, ipsum dolor.</li>
+            <li class="li">Lorem, ipsum dolor.</li>
+            <li class="li">Lorem, ipsum.</li>
+            <li class="last-li">Lorem ipsum dolor sit.</li>
+        </ul>
+        
+        <table class="table">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Display</h2>
+
+        <ul class="inline">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    
+
+        <div class="box">
+            Lorem ipsum dolor
+            sit amet, consectetur adipisicing
+            elit. Quidem, inventore!
         </div>
+        <div class="box">
+            Lorem ipsum dolor
+            sit amet, consectetur adipisicing
+            elit. Quidem, inventore!
+        </div>
+        <div class="box">
+            Lorem ipsum dolor
+            sit amet, consectetur adipisicing
+            elit. Quidem, inventore!
+        </div>
+    </div>  
+    
+    <div class="card">
+        <h2>Positions</h2>
 
-        <hr class="standart-hr">
-        
-        
+        <div class="playground">
+            <div class="pos-box"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="c-h2">Links & Buttons</h2>
+
+        <p>
+            <a href="#" class="btn">Очень важная ссылка</a>
+        </p>
+
+        <p>
+            <button class="btn">Это кнопка</button>
+        </p>
+    </div>
+
+    <div class="card" id="card-color">
+        <h2>Color</h2>
+        <section class="section-color">
+            <h3 class="color1">Color</h3>
+            <h3 class="color2">Color</h3>
+            <h3 class="color3">Color</h3>
+            <h3 class="color4">Color</h3>
+            <h3 class="color5">Color</h3>
+        </section>    
         <br>
+    </div>
 
-        <div class="connect-fo-me">
-            <form>
-                <div id="connect-fo-me-input-name" class="connect-fo-me-input-name">
-                    <label for="name">Ваше имя: </label>
-                    <input type="text" id="name" placeholder="Введите имя">
-                </div>
-                <div id="connect-fo-me-input-email" class="connect-fo-me-input-email">
-                    <label for="email">Ваше email: </label>
-                    <input type="text" id="email" placeholder="Введите email">
-                </div>
+    <div class="html" id="html">
+        <h2>HTML</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Modi est eligendi beatae excepturi iste! Aperiam
+            provident sit ex rem voluptates eveniet voluptate
+            iste eum quo voluptas. Distinctio quos atque ipsam?
+        </p>
+    </div>
 
-                <div id="connect-fo-me-message" class="connect-fo-me-message">
-                    <label for="message">Ваше сообщение: </label>
-                    <br>
-                    <textarea type="text" class="message" id="message" placeholder="Введите сообщение"></textarea>
-                </div>
+    <div class="css" id="css">
+        <h2>CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae esse facere sit excepturi error ut fuga minima
+            possimus ratione ducimus cumque numquam dolor alias sed,
+            repudiandae consectetur distinctio? Animi, pariatur.
+        </p>
+    </div>
 
-                <button class="bottom-submit" id="connect-fo-me-botton-submit" type="submit">Отправить!</button>
-
-            </form>
-        </div>
-
-        <hr class="footer-hr">
-
-        <footer id="contact-pages" class="my-pages" align="center">
-        <a href="https://google.com" target="_blank">Google |</a>
-        <a href="https://vk.com/vprch" target="_blank">ВК |</a>
-        </footer>
-    </body>
+    <div class="card-border" id="card-border">
+        <h2 class="header-border" id="header-border">Border</h2>
+        <article class="article-p-border" id="article-p-border">
+            <p class="border-1"> Lorem ipsum dolor sit amet.</p>
+            <p class="border-2"> Lorem ipsum dolor sit amet.</p>
+            <p class="border-3"> Lorem ipsum dolor sit amet.</p>
+        </article>    
+    </div>
+</body>
 </html>
