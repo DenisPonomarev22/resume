@@ -6,6 +6,10 @@ body {
 
 /* Class */
 
+* {
+    color: black;
+}
+
 .font-for-header {
     font-family: Snell Roundhand, cursive;
 }
